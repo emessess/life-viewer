@@ -1,11 +1,12 @@
-const User = require('./user')
+const User = require('./user');
+const Image = require('./image');
+const Organism = require('./organism')
 
 /**
- * If we had any associations to make, this would be a great place to put them!
- * ex. if we had another model called BlogPost, we might say:
- *
- *    BlogPost.belongsTo(User)
+ * Associations
  */
+
+ Image.belongsTo(Organism);
 
 /**
  * We'll export all of our models here, so that any time a module needs a model,
@@ -15,4 +16,5 @@ const User = require('./user')
  */
 module.exports = {
   User
-}
+};
+
