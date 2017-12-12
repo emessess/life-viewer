@@ -5,4 +5,5 @@
  */
 export {default as Main} from './Main';
 export {default as Home} from './Home';
+export {default as SingleOrganism} from './SingleOrganism';
 export {Login, Signup} from './AuthForm';
