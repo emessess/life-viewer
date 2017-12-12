@@ -11,8 +11,19 @@ router.get('/', (req, res, next) => {
       }
     ]
   })
-  .then(organisms => res.json(organisms))
-  .catch(next);
+    .then(organisms => res.json(organisms))
+    .catch(next);
 });
 
 // get one organism
+
+router.get('/:organismId', (req, res, next) => {
+  Organism.findOne(
+    { include: [{model: Image}],
+      where: {
+      id: Number(req.params.organismId)
+    }})
+    .then(organism => res.json(organism))
+    .catch(next);
+});
+
