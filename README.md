@@ -1,5 +1,5 @@
 
-* LifeViewer
+LifeViewer
 
 Generator/BoilerPlate: 
   https://github.com/FullstackAcademy/boilermaker/
