@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db');
 
-const Organism  = db.define('user', {
+const Organism  = db.define('organism', {
   name: {
     type: Sequelize.STRING,
     allowNull: false
