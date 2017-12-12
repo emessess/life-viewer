@@ -15,6 +15,8 @@ const Organism = require('./organism')
  * instead of: const User = require('../db/models/user')
  */
 module.exports = {
-  User
+  User,
+  Image,
+  Organism
 };
 
