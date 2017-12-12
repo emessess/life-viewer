@@ -19,7 +19,7 @@ const getOrganisms = organisms => ({type: GET_ORGANISMS, organisms});
  */
 export const fetchOrganisms = () =>
   dispatch =>
-    axios.get('/organisms/')
+    axios.get('/api/organisms')
       .then(res =>
         dispatch(getOrganisms(res.data)))
       .catch(err => console.log(err));
